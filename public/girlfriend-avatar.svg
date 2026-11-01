@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="gfBgGlow" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#4a042e"/>
+      <stop offset="45%" stop-color="#2a051d"/>
+      <stop offset="80%" stop-color="#14020e"/>
+      <stop offset="100%" stop-color="#050104"/>
+    </radialGradient>
+
+    <!-- Warm Pink/Rose Ambient Glow -->
+    <radialGradient id="gfRimGlow" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#db2777" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Silky Dark Hair with Rose Glow -->
+    <linearGradient id="gfHairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b1d28"/>
+      <stop offset="35%" stop-color="#241018"/>
+      <stop offset="70%" stop-color="#14080e"/>
+      <stop offset="100%" stop-color="#080206"/>
+    </linearGradient>
+
+    <linearGradient id="gfHairHighlight" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#fbcfe8"/>
+      <stop offset="50%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#be185d" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Skin Gradients (Warm Fair Indian Skin) -->
+    <linearGradient id="gfSkinGrad" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#fff1f2"/>
+      <stop offset="55%" stop-color="#ffe4e6"/>
+      <stop offset="100%" stop-color="#fecdd3"/>
+    </linearGradient>
+
+    <!-- Cute Top Gradient (Rose Pastel Knit Sweater) -->
+    <linearGradient id="sweaterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="40%" stop-color="#ec4899"/>
+      <stop offset="80%" stop-color="#db2777"/>
+      <stop offset="100%" stop-color="#9d174d"/>
+    </linearGradient>
+
+    <filter id="gfGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#gfBgGlow)"/>
+
+  <!-- Rose Ambient Rim Glow -->
+  <circle cx="90" cy="190" r="210" fill="url(#gfRimGlow)"/>
+  <circle cx="420" cy="200" r="160" fill="#f472b6" opacity="0.1" filter="url(#gfGlow)"/>
+
+  <!-- Flowing Long Hair Behind Shoulders -->
+  <path d="M 120 180 C 100 270, 105 380, 130 460 L 382 460 C 407 380, 412 270, 392 180 C 375 110, 330 55, 256 55 C 182 55, 137 110, 120 180 Z" fill="url(#gfHairGrad)"/>
+
+  <!-- Shoulders & Outfit (Cozy Rose Knitted Cardigan & Top) -->
+  <g id="gf-body">
+    <!-- Cardigan Base -->
+    <path d="M 80 512 L 80 435 C 80 395, 155 355, 256 355 C 357 355, 432 395, 432 435 L 432 512 Z" fill="url(#sweaterGrad)"/>
+    
+    <!-- Left Shoulder Rim Light -->
+    <path d="M 80 512 L 80 435 C 80 395, 150 360, 215 370 C 145 400, 95 445, 90 512 Z" fill="#fbcfe8" opacity="0.4"/>
+
+    <!-- Inner Sweetheart Neckline -->
+    <path d="M 195 365 C 220 395, 256 420, 256 420 C 256 420, 292 395, 317 365 C 290 380, 222 380, 195 365 Z" fill="#fda4af"/>
+
+    <!-- Neck Shadow -->
+    <path d="M 220 310 L 292 310 L 305 370 C 275 385, 237 385, 207 370 Z" fill="#f43f5e" opacity="0.3"/>
+
+    <!-- Neck Base -->
+    <path d="M 220 295 L 292 295 L 296 358 C 270 370, 242 370, 216 358 Z" fill="url(#gfSkinGrad)"/>
+
+    <!-- Dainty Heart Pendant Necklace -->
+    <path d="M 228 340 Q 256 390 284 340" stroke="#fcd34d" stroke-width="1.8" fill="none" opacity="0.9"/>
+    <!-- Small Gold Heart -->
+    <g transform="translate(256, 390) scale(0.65)">
+      <path d="M 0 0 C -10 -15, -25 5, 0 25 C 25 5, 10 -15, 0 0 Z" fill="#f59e0b"/>
+    </g>
+  </g>
+
+  <!-- Head & Facial Features -->
+  <g id="gf-head">
+    <!-- Soft Heart-shaped Jawline -->
+    <path d="M 165 170 C 165 110, 204 95, 256 95 C 308 95, 347 110, 347 170 C 347 238, 312 305, 256 305 C 200 305, 165 238, 165 170 Z" fill="url(#gfSkinGrad)"/>
+
+    <!-- Soft Rosy Cheeks Blush -->
+    <ellipse cx="195" cy="232" rx="22" ry="11" fill="#f43f5e" opacity="0.28"/>
+    <ellipse cx="317" cy="232" rx="22" ry="11" fill="#f43f5e" opacity="0.28"/>
+
+    <!-- Tiny Cute Bindi between eyebrows (Aesthetic Indian touch) -->
+    <circle cx="256" cy="180" r="2.2" fill="#be123c"/>
+
+    <!-- Big Sparkling Expressive Left Eye -->
+    <g id="gf-left-eye">
+      <ellipse cx="206" cy="210" rx="18" ry="22" fill="#1c1917"/>
+      <ellipse cx="206" cy="210" rx="16" ry="20" fill="#78350f"/>
+      <circle cx="206" cy="213" r="10" fill="#1c0a00"/>
+      <!-- Soft Amber-Rose Iris Glow -->
+      <path d="M 195 218 C 200 228, 212 228, 217 218 Z" fill="#fb923c" opacity="0.75"/>
+      <!-- Catchlights -->
+      <ellipse cx="200" cy="201" rx="7" ry="8" fill="#ffffff"/>
+      <circle cx="213" cy="219" r="3" fill="#ffffff" opacity="0.9"/>
+      <circle cx="201" cy="218" r="2" fill="#ffffff" opacity="0.8"/>
+      <!-- Fluttery Eyelashes -->
+      <path d="M 186 195 C 200 184, 222 186, 228 196" stroke="#1c1917" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+      <path d="M 226 193 L 234 188" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 186 195 L 180 191" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Big Sparkling Expressive Right Eye -->
+    <g id="gf-right-eye">
+      <ellipse cx="306" cy="210" rx="18" ry="22" fill="#1c1917"/>
+      <ellipse cx="306" cy="210" rx="16" ry="20" fill="#78350f"/>
+      <circle cx="306" cy="213" r="10" fill="#1c0a00"/>
+      <!-- Soft Amber-Rose Iris Glow -->
+      <path d="M 295 218 C 300 228, 312 228, 317 218 Z" fill="#fb923c" opacity="0.75"/>
+      <!-- Catchlights -->
+      <ellipse cx="300" cy="201" rx="7" ry="8" fill="#ffffff"/>
+      <circle cx="313" cy="219" r="3" fill="#ffffff" opacity="0.9"/>
+      <circle cx="301" cy="218" r="2" fill="#ffffff" opacity="0.8"/>
+      <!-- Fluttery Eyelashes -->
+      <path d="M 284 196 C 290 186, 312 184, 326 195" stroke="#1c1917" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+      <path d="M 326 195 L 332 191" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 284 196 L 278 192" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Soft Curved Eyebrows -->
+    <path d="M 188 178 C 202 168, 222 170, 228 177" stroke="#292524" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 284 177 C 290 170, 310 168, 324 178" stroke="#292524" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Dainty Cute Nose -->
+    <path d="M 254 226 L 257 234 L 253 236" stroke="#f43f5e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/>
+
+    <!-- Sweet Loving Lip Gloss Smile -->
+    <g id="gf-mouth">
+      <!-- Upper Lip -->
+      <path d="M 234 260 C 244 257, 252 260, 256 261 C 260 260, 268 257, 278 260" stroke="#e11d48" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <!-- Open Sweet Smile with soft teeth -->
+      <path d="M 234 260 C 242 278, 270 278, 278 260 C 270 282, 242 282, 234 260 Z" fill="#be123c"/>
+      <path d="M 238 262 C 246 268, 266 268, 274 262 Z" fill="#ffffff"/>
+      <!-- Pink Lip Gloss Highlight -->
+      <ellipse cx="256" cy="275" rx="8" ry="3" fill="#fda4af" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Gorgeous Flowing Hair Framing Face -->
+  <g id="gf-front-hair">
+    <!-- Left Tendril Framing Cheek -->
+    <path d="M 168 135 C 150 175, 140 230, 146 280 C 150 315, 168 350, 185 365 C 192 355, 175 305, 170 260 C 165 200, 178 155, 188 130 Z" fill="url(#gfHairGrad)"/>
+    
+    <!-- Left Lock Rose Highlight -->
+    <path d="M 168 135 C 150 175, 140 230, 146 280 C 150 315, 168 350, 185 365 C 175 350, 158 305, 154 260 C 150 200, 162 155, 168 135 Z" fill="url(#gfHairHighlight)"/>
+
+    <!-- Right Side Long Flowing Hair -->
+    <path d="M 344 135 C 362 175, 372 230, 366 280 C 362 315, 344 350, 327 365 C 320 355, 337 305, 342 260 C 347 200, 334 155, 324 130 Z" fill="url(#gfHairGrad)"/>
+
+    <!-- Soft Korean/Indian Curtain Bangs -->
+    <path d="M 170 120 C 195 155, 225 165, 235 125 C 245 165, 275 165, 285 125 C 295 165, 325 155, 342 120 C 315 75, 275 62, 256 62 C 220 62, 188 75, 170 120 Z" fill="url(#gfHairGrad)"/>
+
+    <!-- Crown Volume Highlights -->
+    <path d="M 180 110 C 210 80, 255 72, 292 82" stroke="url(#gfHairHighlight)" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- Cute Pastel Butterfly/Flower Hair Clip on the Left -->
+    <g transform="translate(160, 130) rotate(-15) scale(0.8)">
+      <circle cx="0" cy="0" r="4" fill="#fbcfe8"/>
+      <!-- Petals -->
+      <ellipse cx="-8" cy="-8" rx="8" ry="6" fill="#f472b6" transform="rotate(-30, -8, -8)"/>
+      <ellipse cx="8" cy="-8" rx="8" ry="6" fill="#f472b6" transform="rotate(30, 8, -8)"/>
+      <ellipse cx="-7" cy="7" rx="7" ry="5" fill="#ec4899" transform="rotate(20, -7, 7)"/>
+      <ellipse cx="7" cy="7" rx="7" ry="5" fill="#ec4899" transform="rotate(-20, 7, 7)"/>
+      <circle cx="0" cy="0" r="3" fill="#fef08a"/>
+    </g>
+  </g>
+
+  <!-- Sparkle floating accent -->
+  <g transform="translate(430, 430) scale(0.8)">
+    <path d="M 0 -15 Q 0 0 15 0 Q 0 0 0 15 Q 0 0 -15 0 Q 0 0 0 -15 Z" fill="#f472b6" opacity="0.8"/>
+    <circle cx="0" cy="0" r="3.5" fill="#ffffff"/>
+  </g>
+</svg>

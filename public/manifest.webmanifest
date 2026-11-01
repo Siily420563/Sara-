@@ -1,0 +1,82 @@
+{
+  "id": "/",
+  "name": "SARA AI Assistant",
+  "short_name": "SARA",
+  "description": "SARA - Personal AI Companion & Voice Assistant",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#060B14",
+  "theme_color": "#060B14",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Voice Call with Sara",
+      "short_name": "Voice Call",
+      "description": "Start an instant live voice call with Sara",
+      "url": "/?action=voice_call",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Camera Vision",
+      "short_name": "Camera",
+      "description": "Show Sara what you are looking at via camera",
+      "url": "/?action=camera",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Live News Feed",
+      "short_name": "News Feed",
+      "description": "Get real-time verified news and headlines",
+      "url": "/?action=news",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "share_title",
+      "text": "share_text",
+      "url": "share_url"
+    }
+  }
+}

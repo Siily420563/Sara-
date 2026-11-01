@@ -1,0 +1,6 @@
+{
+  "name": "SARA",
+  "description": "Personal AI Companion with NEET syllabus & diagram repository, PDF & file analysis, image generation, real-time live news intelligence, voice-controlled browser navigation, and calling capabilities",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

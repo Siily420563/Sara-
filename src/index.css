@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-wobble: wobble 4s ease-in-out infinite;
+  --animate-wobble-fast: wobble 3s ease-in-out infinite;
+
+  @keyframes wobble {
+    0%, 100% {
+      transform: scale(1) rotate(0deg);
+    }
+    25% {
+      transform: scale(1.02) rotate(-1deg);
+    }
+    50% {
+      transform: scale(0.98) rotate(1deg);
+    }
+    75% {
+      transform: scale(1.01) rotate(-0.5deg);
+    }
+  }
+}
+

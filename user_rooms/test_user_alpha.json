@@ -1,0 +1,22 @@
+{
+  "userId": "test_user_alpha",
+  "messages": [
+    {
+      "id": "1",
+      "role": "user",
+      "text": "hello from alpha"
+    }
+  ],
+  "state": {
+    "facts": [
+      {
+        "id": "1",
+        "text": "alpha fact"
+      }
+    ]
+  },
+  "reminders": [],
+  "pushSubscriptions": [],
+  "lastSeenTime": 1789491734263,
+  "missingNotificationSent": false
+}
